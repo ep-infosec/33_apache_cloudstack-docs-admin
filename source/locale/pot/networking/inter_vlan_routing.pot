@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Apache Software Foundation
+# This file is distributed under the same license as the Apache CloudStack Administration Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Apache CloudStack Administration Documentation 4.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-22 13:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../networking/inter_vlan_routing.rst:18
+msgid "About Inter-VLAN Routing (nTier Apps)"
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:20
+msgid "Inter-VLAN Routing (nTier Apps) is the capability to route network traffic between VLANs. This feature enables you to build Virtual Private Clouds (VPC), an isolated segment of your cloud, that can hold multi-tier applications. These tiers are deployed on different VLANs that can communicate with each other. You provision VLANs to the tiers your create, and VMs can be deployed on different tiers. The VLANs are connected to a virtual router, which facilitates communication between the VMs. In effect, you can segment VMs by means of VLANs into different networks that can host multi-tier applications, such as Web, Application, or Database. Such segmentation by means of VLANs logically separate application VMs for higher security and lower broadcasts, while remaining physically connected to the same device."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:33
+msgid "This feature is supported on XenServer, KVM, and VMware hypervisors."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:35
+msgid "The major advantages are:"
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:37
+msgid "The administrator can deploy a set of VLANs and allow users to deploy VMs on these VLANs. A guest VLAN is randomly alloted to an account from a pre-specified set of guest VLANs. All the VMs of a certain tier of an account reside on the guest VLAN allotted to that account."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:43
+msgid "A VLAN allocated for an account cannot be shared between multiple accounts."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:45
+msgid "The administrator can allow users create their own VPC and deploy the application. In this scenario, the VMs that belong to the account are deployed on the VLANs allotted to that account."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:49
+msgid "Both administrators and users can create multiple VPCs. The guest network NIC is plugged to the VPC virtual router when the first VM is deployed in a tier."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:53
+msgid "The administrator can create the following gateways to send to or receive traffic from the VMs:"
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:56
+msgid "**VPN Gateway**: For more information, see `\"Creating a VPN gateway for the VPC\" <#creating-a-vpn-gateway-for-the-vpc>`_."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:59
+msgid "**Public Gateway**: The public gateway for a VPC is added to the virtual router when the virtual router is created for VPC. The public gateway is not exposed to the end users. You are not allowed to list it, nor allowed to create any static routes."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:64
+msgid "**Private Gateway**: For more information, see \":ref:`adding-priv-gw-vpc`\"."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:66
+msgid "Both administrators and users can create various possible destinations-gateway combinations. However, only one gateway of each type can be used in a deployment."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:70
+msgid "For example:"
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:72
+msgid "**VLANs and Public Gateway**: For example, an application is deployed in the cloud, and the Web application VMs communicate with the Internet."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:76
+msgid "**VLANs, VPN Gateway, and Public Gateway**: For example, an application is deployed in the cloud; the Web application VMs communicate with the Internet; and the database VMs communicate with the on-premise devices."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:81
+msgid "The administrator can define Network Access Control List (ACL) on the virtual router to filter the traffic among the VLANs or between the Internet and a VLAN. You can define ACL based on CIDR, port range, protocol, type code (if ICMP protocol is selected) and Ingress/Egress type."
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:87
+msgid "The following figure shows the possible deployment scenarios of a Inter-VLAN setup:"
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:90
+msgid "|mutltier.png|"
+msgstr ""
+
+#: ../../networking/inter_vlan_routing.rst:92
+msgid "To set up a multi-tier Inter-VLAN deployment, see \":ref:`configuring-vpc`\"."
+msgstr ""
+

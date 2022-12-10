@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Apache Software Foundation
+# This file is distributed under the same license as the Apache CloudStack Administration Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Apache CloudStack Administration Documentation 4.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-22 13:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../networking/multiple_guest_networks.rst:18
+msgid "Using Multiple Guest Networks"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:20
+msgid "In zones that use advanced networking, additional networks for guest traffic may be added at any time after the initial installation. You can also customize the domain name associated with the network by specifying a DNS suffix for each network."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:25
+msgid "A VM's networks are defined at VM creation time. A VM cannot add or remove networks after it has been created, although the user can go into the guest and remove the IP address from the NIC on a particular network."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:30
+msgid "Each VM has just one default network. The virtual router's DHCP reply will set the guest's default gateway as that for the default network. Multiple non-default networks may be added to a guest in addition to the single, required default network. The administrator can control which networks are available as the default network."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:36
+msgid "Additional networks can either be available to all accounts or be assigned to a specific account. Networks that are available to all accounts are zone-wide. Any user with access to the zone can create a VM with access to that network. These zone-wide networks provide little or no isolation between guests.Networks that are assigned to a specific account provide strong isolation."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:45
+msgid "Adding an Additional Guest Network"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:47
+#: ../../networking/multiple_guest_networks.rst:97
+#: ../../networking/multiple_guest_networks.rst:135
+#: ../../networking/multiple_guest_networks.rst:153
+#: ../../networking/multiple_guest_networks.rst:173
+msgid "Log in to the CloudStack UI as an administrator or end user."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:49
+#: ../../networking/multiple_guest_networks.rst:179
+msgid "In the left navigation, choose Network."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:51
+msgid "Click Add guest network. Provide the following information:"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:53
+msgid "**Name**: The name of the network. This will be user-visible."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:55
+msgid "**Display Text**: The description of the network. This will be user-visible."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:58
+msgid "**Zone**. The name of the zone this network applies to. Each zone is a broadcast domain, and therefore each zone has a different IP range for the guest network. The administrator must configure the IP range for each zone."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:63
+msgid "**Network offering**: If the administrator has configured multiple network offerings, select the one you want to use for this network."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:67
+msgid "**Guest Gateway**: The gateway that the guests should use."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:69
+msgid "**Guest Netmask**: The netmask in use on the subnet the guests will use."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:72
+msgid "Click Create."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:76
+msgid "Reconfiguring Networks in VMs"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:78
+msgid "CloudStack provides you the ability to move VMs between networks and reconfigure a VM's network. You can remove a VM from a network and add to a new network. You can also change the default network of a virtual machine. With this functionality, hybrid or traditional server loads can be accommodated with ease."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:84
+msgid "This feature is supported on XenServer, VMware, and KVM hypervisors."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:88
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:90
+msgid "Ensure that vm-tools are running on guest VMs for adding or removing networks to work on VMware hypervisor."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:95
+msgid "Adding a Network"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:99
+#: ../../networking/multiple_guest_networks.rst:137
+#: ../../networking/multiple_guest_networks.rst:155
+msgid "In the left navigation, click Instances."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:101
+#: ../../networking/multiple_guest_networks.rst:139
+#: ../../networking/multiple_guest_networks.rst:157
+msgid "Choose the VM that you want to work with."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:103
+#: ../../networking/multiple_guest_networks.rst:141
+#: ../../networking/multiple_guest_networks.rst:159
+msgid "Click the NICs tab."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:105
+msgid "Click Add network to VM."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:107
+msgid "The Add network to VM dialog is displayed."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:109
+msgid "In the drop-down list, select the network that you would like to add this VM to."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:112
+msgid "A new NIC is added for this network. You can view the following details in the NICs page:"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:115
+msgid "ID"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:117
+msgid "Network Name"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:119
+msgid "Type"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:121
+msgid "IP Address"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:123
+msgid "Gateway"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:125
+msgid "Netmask"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:127
+msgid "Is default"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:129
+msgid "CIDR (for IPv6)"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:133
+msgid "Removing a Network"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:143
+msgid "Locate the NIC you want to remove."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:145
+msgid "Click Remove NIC button. |remove-nic.png|"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:147
+#: ../../networking/multiple_guest_networks.rst:165
+msgid "Click Yes to confirm."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:151
+msgid "Selecting the Default Network"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:161
+msgid "Locate the NIC you want to work with."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:163
+msgid "Click the Set default NIC button. |set-default-nic.png|."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:168
+msgid "Changing the Network Offering on a Guest Network"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:170
+msgid "A user or administrator can change the network offering that is associated with an existing guest network."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:175
+msgid "If you are changing from a network offering that uses the CloudStack virtual router to one that uses external devices as network service providers, you must first stop all the VMs on the network."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:181
+msgid "Click the name of the network you want to modify."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:183
+msgid "In the Details tab, click Edit. |edit-icon.png|"
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:185
+msgid "In Network Offering, choose the new network offering, then click Apply."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:188
+msgid "A prompt is displayed asking whether you want to keep the existing CIDR. This is to let you know that if you change the network offering, the CIDR will be affected."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:192
+msgid "If you upgrade between virtual router as a provider and an external network device as provider, acknowledge the change of CIDR to continue, so choose Yes."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:196
+msgid "Wait for the update to complete. Don't try to restart VMs until the network change is complete."
+msgstr ""
+
+#: ../../networking/multiple_guest_networks.rst:199
+msgid "If you stopped any VMs, restart them."
+msgstr ""
+

@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Apache Software Foundation
+# This file is distributed under the same license as the Apache CloudStack Administration Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Apache CloudStack Administration Documentation 4.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-22 13:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../networking/multiple_ips_on_single_nic.rst:18
+msgid "Configuring Multiple IP Addresses on a Single NIC"
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:20
+msgid "CloudStack provides you the ability to associate multiple private IP addresses per guest VM NIC. In addition to the primary IP, you can assign additional IPs to the guest VM NIC. This feature is supported on all the network configurations: Basic, Advanced, and VPC. Security Groups, Static NAT and Port forwarding services are supported on these additional IPs."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:27
+msgid "As always, you can specify an IP from the guest subnet; if not specified, an IP is automatically picked up from the guest VM subnet. You can view the IPs associated with for each guest VM NICs on the UI. You can apply NAT on these additional guest IPs by using network configuration option in the CloudStack UI. You must specify the NIC to which the IP should be associated."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:34
+msgid "This feature is supported on XenServer, KVM, and VMware hypervisors. Note that Basic zone security groups are not supported on VMware."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:39
+msgid "Use Cases"
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:41
+msgid "Some of the use cases are described below:"
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:43
+msgid "Network devices, such as firewalls and load balancers, generally work best when they have access to multiple IP addresses on the network interface."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:47
+msgid "Moving private IP addresses between interfaces or instances. Applications that are bound to specific IP addresses can be moved between instances."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:51
+msgid "Hosting multiple SSL Websites on a single instance. You can install multiple SSL certificates on a single instance, each associated with a distinct IP address."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:57
+msgid "Guidelines"
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:59
+msgid "To prevent IP conflict, configure different subnets when multiple networks are connected to the same VM."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:64
+msgid "Assigning Additional IPs to a VM"
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:66
+msgid "Log in to the CloudStack UI."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:68
+msgid "In the left navigation bar, click Instances."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:70
+msgid "Click the name of the instance you want to work with."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:72
+msgid "In the Details tab, click NICs."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:74
+msgid "Click View Secondary IPs."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:76
+msgid "Click Acquire New Secondary IP, and click Yes in the confirmation dialog."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:79
+msgid "You need to configure the IP on the guest VM NIC manually. CloudStack will not automatically configure the acquired IP address on the VM. Ensure that the IP address configuration persist on VM reboot."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:83
+msgid "Within a few moments, the new IP address should appear with the state Allocated. You can now use the IP address in Port Forwarding or StaticNAT rules."
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:89
+msgid "Port Forwarding and StaticNAT Services Changes"
+msgstr ""
+
+#: ../../networking/multiple_ips_on_single_nic.rst:91
+msgid "Because multiple IPs can be associated per NIC, you are allowed to select a desired IP for the Port Forwarding and StaticNAT services. The default is the primary IP. To enable this functionality, an extra optional parameter 'vmguestip' is added to the Port forwarding and StaticNAT APIs (enableStaticNat, createIpForwardingRule) to indicate on what IP address NAT need to be configured. If vmguestip is passed, NAT is configured on the specified private IP of the VM. if not passed, NAT is configured on the primary IP of the VM."
+msgstr ""
+

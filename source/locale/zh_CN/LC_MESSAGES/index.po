@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Apache CloudStack
+# Administration Documentation package.
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Apache CloudStack Administration RTD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-22 13:55+0200\n"
+"PO-Revision-Date: 2014-06-30 12:04+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p"
+"/apache-cloudstack-administration-rtd/language/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../index.rst:23
+#, fuzzy
+msgid "CloudStack Administration Documentation"
+msgstr "欢迎阅读CloudStack管理文档"
+
+#: ../../index.rst:28
+msgid ""
+"This guide is aimed at Administrators of a CloudStack based Cloud, for "
+"Release Notes, Installation and General introduction to CloudStack see "
+"the following guides:"
+msgstr ""
+
+#: ../../index.rst:32
+msgid "`Documentation Start <http://docs.cloudstack.apache.org>`_"
+msgstr ""
+
+#: ../../index.rst:34
+msgid ""
+"`Installation Guide <http://docs.cloudstack.apache.org/projects"
+"/cloudstack-installation>`_"
+msgstr ""
+
+#: ../../index.rst:36
+msgid ""
+"`Release Notes <http://docs.cloudstack.apache.org/projects/cloudstack-"
+"release-notes>`_"
+msgstr ""
+"`发行说明 <http://docs.cloudstack.apache.org/projects/cloudstack-release-"
+"notes>`_"
+
+#: ../../index.rst:40
+msgid "User Interface"
+msgstr "用户界面"
+
+#: ../../index.rst:49
+msgid "Managing Accounts, Users and Domains"
+msgstr "管理账户，用户和域"
+
+#: ../../index.rst:58
+msgid "Using Projects to Organize User Resources"
+msgstr "使用项目来组织用户资源"
+
+#: ../../index.rst:66
+msgid "Service Offerings"
+msgstr "服务方案"
+
+#: ../../index.rst:75
+msgid "Setting up Networking for Users"
+msgstr "用户网络设置"
+
+#: ../../index.rst:84
+msgid "Working with Virtual Machines"
+msgstr "使用虚拟机"
+
+#: ../../index.rst:93
+msgid "Working with Templates"
+msgstr "使用模板"
+
+#: ../../index.rst:102
+msgid "Working with Hosts"
+msgstr "使用主机"
+
+#: ../../index.rst:111
+msgid "Working with Storage"
+msgstr "使用存储"
+
+#: ../../index.rst:120
+msgid "Working with System Virtual Machines"
+msgstr "使用系统虚拟机"
+
+#: ../../index.rst:129
+msgid "Working with Usage"
+msgstr "使用服务"
+
+#: ../../index.rst:138
+msgid "Managing Networks and Traffic"
+msgstr "网络和流量管理"
+
+#: ../../index.rst:148
+msgid "Managing the Cloud"
+msgstr "管理云"
+
+#: ../../index.rst:157
+msgid "System Reliability and Availability"
+msgstr "系统可靠性和可用性"
+
+#: ../../index.rst:166
+msgid "Plugins"
+msgstr ""
+
+#: ../../index.rst:175
+msgid "Tuning"
+msgstr "调优"
+
+#: ../../index.rst:184
+msgid "Events and Troubleshooting"
+msgstr "事件和故障排查"
+
+# 17401d6f4fa445e288e17f050447db52
+#~ msgid ""
+#~ "We are in the process of changing"
+#~ " documentation format as well as "
+#~ "hosting mechanism. Please be patient "
+#~ "with us as we migrate our entire"
+#~ " documentation to this new setup."
+#~ msgstr ""
+

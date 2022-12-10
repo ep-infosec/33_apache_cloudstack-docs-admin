@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Apache Software Foundation
+# This file is distributed under the same license as the Apache CloudStack Administration Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Apache CloudStack Administration Documentation 4.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-22 13:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../networking/portable_ips.rst:18
+msgid "Portable IPs"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:21
+msgid "About Portable IP"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:23
+msgid "Portable IPs in CloudStack are region-level pool of IPs, which are elastic in nature, that can be transferred across geographically separated zones. As an administrator, you can provision a pool of portable public IPs at region level and are available for user consumption. The users can acquire portable IPs if admin has provisioned portable IPs at the region level they are part of. These IPs can be use for any service within an advanced zone. You can also use portable IPs for EIP services in basic zones."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:32
+msgid "The salient features of Portable IP are as follows:"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:34
+msgid "IP is statically allocated"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:36
+msgid "IP need not be associated with a network"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:38
+msgid "IP association is transferable across networks"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:40
+msgid "IP is transferable across both Basic and Advanced zones"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:42
+msgid "IP is transferable across VPC, non-VPC isolated and shared networks"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:44
+msgid "Portable IP transfer is available only for static NAT."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:48
+msgid "Guidelines"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:50
+msgid "Before transferring to another network, ensure that no network rules (Firewall, Static NAT, Port Forwarding, and so on) exist on that portable IP."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:56
+msgid "Configuring Portable IPs"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:58
+#: ../../networking/portable_ips.rst:90
+msgid "Log in to the CloudStack UI as an administrator or end user."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:60
+msgid "In the left navigation, click Regions."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:62
+msgid "Choose the Regions that you want to work with."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:64
+msgid "Click View Portable IP."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:66
+msgid "Click Portable IP Range."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:68
+msgid "The Add Portable IP Range window is displayed."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:70
+msgid "Specify the following:"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:72
+msgid "**Start IP/ End IP**: A range of IP addresses that are accessible from the Internet and will be allocated to guest VMs. Enter the first and last IP addresses that define a range that CloudStack can assign to guest VMs."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:77
+msgid "**Gateway**: The gateway in use for the Portable IP addresses you are configuring."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:80
+msgid "**Netmask**: The netmask associated with the Portable IP range."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:82
+msgid "**VLAN**: The VLAN that will be used for public traffic."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:84
+msgid "Click OK."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:88
+msgid "Acquiring a Portable IP"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:92
+msgid "In the left navigation, choose Network."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:94
+msgid "Click the name of the network where you want to work with."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:96
+msgid "Click View IP Addresses."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:98
+msgid "Click Acquire New IP."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:100
+msgid "The Acquire New IP window is displayed."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:102
+msgid "Specify whether you want cross-zone IP or not."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:104
+msgid "Click Yes in the confirmation dialog."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:106
+msgid "Within a few moments, the new IP address should appear with the state Allocated. You can now use the IP address in port forwarding or static NAT rules."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:112
+msgid "Transferring Portable IP"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:114
+msgid "An IP can be transferred from one network to another only if Static NAT is enabled. However, when a portable IP is associated with a network, you can use it for any service in the network."
+msgstr ""
+
+#: ../../networking/portable_ips.rst:118
+msgid "To transfer a portable IP across the networks, execute the following API:"
+msgstr ""
+
+#: ../../networking/portable_ips.rst:125
+msgid "Replace the UUID with appropriate UUID. For example, if you want to transfer a portable IP to network X and VM Y in a network, execute the following:"
+msgstr ""
+

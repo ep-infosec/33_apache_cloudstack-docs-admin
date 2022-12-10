@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Apache Software Foundation
+# This file is distributed under the same license as the Apache CloudStack Administration Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Apache CloudStack Administration Documentation 4.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-22 13:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../index.rst:23
+msgid "CloudStack Administration Documentation"
+msgstr ""
+
+#: ../../index.rst:28
+msgid "This guide is aimed at Administrators of a CloudStack based Cloud, for Release Notes, Installation and General introduction to CloudStack see the following guides:"
+msgstr ""
+
+#: ../../index.rst:32
+msgid "`Documentation Start <http://docs.cloudstack.apache.org>`_"
+msgstr ""
+
+#: ../../index.rst:34
+msgid "`Installation Guide <http://docs.cloudstack.apache.org/projects/cloudstack-installation>`_"
+msgstr ""
+
+#: ../../index.rst:36
+msgid "`Release Notes <http://docs.cloudstack.apache.org/projects/cloudstack-release-notes>`_"
+msgstr ""
+
+#: ../../index.rst:40
+msgid "User Interface"
+msgstr ""
+
+#: ../../index.rst:49
+msgid "Managing Accounts, Users and Domains"
+msgstr ""
+
+#: ../../index.rst:58
+msgid "Using Projects to Organize User Resources"
+msgstr ""
+
+#: ../../index.rst:66
+msgid "Service Offerings"
+msgstr ""
+
+#: ../../index.rst:75
+msgid "Setting up Networking for Users"
+msgstr ""
+
+#: ../../index.rst:84
+msgid "Working with Virtual Machines"
+msgstr ""
+
+#: ../../index.rst:93
+msgid "Working with Templates"
+msgstr ""
+
+#: ../../index.rst:102
+msgid "Working with Hosts"
+msgstr ""
+
+#: ../../index.rst:111
+msgid "Working with Storage"
+msgstr ""
+
+#: ../../index.rst:120
+msgid "Working with System Virtual Machines"
+msgstr ""
+
+#: ../../index.rst:129
+msgid "Working with Usage"
+msgstr ""
+
+#: ../../index.rst:138
+msgid "Managing Networks and Traffic"
+msgstr ""
+
+#: ../../index.rst:148
+msgid "Managing the Cloud"
+msgstr ""
+
+#: ../../index.rst:157
+msgid "System Reliability and Availability"
+msgstr ""
+
+#: ../../index.rst:166
+msgid "Plugins"
+msgstr ""
+
+#: ../../index.rst:175
+msgid "Tuning"
+msgstr ""
+
+#: ../../index.rst:184
+msgid "Events and Troubleshooting"
+msgstr ""
+
